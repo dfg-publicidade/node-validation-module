@@ -58,20 +58,20 @@ class Validation {
         return validateBr.cnpj(cnpj);
     }
 
-    public static telefone(telefone: string): boolean {
-        if (!telefone) {
+    public static telephone(telephone: string): boolean {
+        if (!telephone) {
             return true;
         }
 
-        return validateBr.telefone(telefone);
+        return validateBr.telefone(telephone);
     }
 
-    public static celular(celular: string): boolean {
-        if (!celular) {
+    public static cellphone(cellphone: string): boolean {
+        if (!cellphone) {
             return true;
         }
 
-        return validateBr.celular(celular);
+        return validateBr.celular(cellphone);
     }
 
     public static email(email: string): boolean {
