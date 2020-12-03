@@ -50,17 +50,17 @@ class Validation {
         }
         return js_brasil_1.validateBr.cnpj(cnpj);
     }
-    static telefone(telefone) {
-        if (!telefone) {
+    static telephone(telephone) {
+        if (!telephone) {
             return true;
         }
-        return js_brasil_1.validateBr.telefone(telefone);
+        return js_brasil_1.validateBr.telefone(telephone);
     }
-    static celular(celular) {
-        if (!celular) {
+    static cellphone(cellphone) {
+        if (!cellphone) {
             return true;
         }
-        return js_brasil_1.validateBr.celular(celular);
+        return js_brasil_1.validateBr.celular(cellphone);
     }
     static email(email) {
         if (!email) {

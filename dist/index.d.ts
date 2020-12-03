@@ -6,8 +6,8 @@ declare class Validation {
     static isoCode(code: string): boolean;
     static cpf(cpf: string): boolean;
     static cnpj(cnpj: string): boolean;
-    static telefone(telefone: string): boolean;
-    static celular(celular: string): boolean;
+    static telephone(telephone: string): boolean;
+    static cellphone(cellphone: string): boolean;
     static email(email: string): boolean;
     static cep(cep: string): boolean;
     static fullName(nome: string): boolean;
