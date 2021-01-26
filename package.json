@@ -11,13 +11,14 @@
         "test:all": "npm run test test/**/*.spec.ts test/**/**/*.spec.ts test/**/**/**/*.spec.ts"
     },
     "dependencies": {
+        "@dfgpublicidade/node-app-module": "git+https://github.com/dfg-publicidade/node-app-module.git",
         "@dfgpublicidade/node-url-module": "git+ssh://git@github.com/dfg-publicidade/node-url-module.git",
-        "@types/validator": "^13.1.1",
         "js-brasil": "^2.3.8",
         "validator": "^13.5.1"
     },
     "devDependencies": {
         "@dfgpublicidade/eslint-config": "git+ssh://git@github.com/dfg-publicidade/eslint-config.git",
+        "@types/validator": "^13.1.1",
         "@typescript-eslint/eslint-plugin": "^4.7.0",
         "@typescript-eslint/eslint-plugin-tslint": "^4.8.0",
         "@typescript-eslint/parser": "^4.7.0",
