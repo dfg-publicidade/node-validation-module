@@ -8,6 +8,7 @@ class Validation {
         if (!num) {
             return true;
         }
+
         return num >= 0;
     }
 
@@ -15,6 +16,7 @@ class Validation {
         if (!color) {
             return true;
         }
+
         return /^#[0-9a-fA-F]{6}$/.test(color);
     }
 
