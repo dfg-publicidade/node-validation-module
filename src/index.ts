@@ -102,6 +102,14 @@ class Validation {
         // eslint-disable-next-line no-magic-numbers
         return nome.length > 3 && nome.indexOf(' ') !== -1;
     }
+
+    public static creditCard(creditCard: string): boolean {
+        if (!creditCard) {
+            return true;
+        }
+
+        return validator.isCreditCard(creditCard);
+    }
 }
 
 export default Validation;

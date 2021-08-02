@@ -82,5 +82,11 @@ class Validation {
         // eslint-disable-next-line no-magic-numbers
         return nome.length > 3 && nome.indexOf(' ') !== -1;
     }
+    static creditCard(creditCard) {
+        if (!creditCard) {
+            return true;
+        }
+        return validator_1.default.isCreditCard(creditCard);
+    }
 }
 exports.default = Validation;

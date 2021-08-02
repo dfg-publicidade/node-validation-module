@@ -75,4 +75,10 @@ describe('index.ts', (): void => {
         expect(Validation.fullName(undefined)).to.be.true;
         expect(Validation.fullName('Full Name')).to.be.true;
     });
+
+    it('12. creditCard', async (): Promise<void> => {
+        expect(Validation.creditCard('invalid')).to.be.false;
+        expect(Validation.creditCard(undefined)).to.be.true;
+        expect(Validation.creditCard('5127177324002420')).to.be.true;
+    });
 });

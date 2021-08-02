@@ -11,5 +11,6 @@ declare class Validation {
     static email(email: string): boolean;
     static cep(cep: string): boolean;
     static fullName(nome: string): boolean;
+    static creditCard(creditCard: string): boolean;
 }
 export default Validation;
