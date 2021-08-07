@@ -76,9 +76,23 @@ describe('index.ts', (): void => {
         expect(Validation.fullName('Full Name')).to.be.true;
     });
 
-    it('12. creditCard', async (): Promise<void> => {
+    it('13. creditCard', async (): Promise<void> => {
         expect(Validation.creditCard('invalid')).to.be.false;
         expect(Validation.creditCard(undefined)).to.be.true;
         expect(Validation.creditCard('5127177324002420')).to.be.true;
+    });
+
+    it('14. futureDate', async (): Promise<void> => {
+        const past: Date = new Date();
+        // eslint-disable-next-line no-magic-numbers
+        past.setTime(past.getTime() - 1000);
+
+        const future: Date = new Date();
+        // eslint-disable-next-line no-magic-numbers
+        future.setTime(future.getTime() + 1000);
+
+        expect(Validation.futureDate(undefined)).to.be.true;
+        expect(Validation.futureDate(past)).to.be.false;
+        expect(Validation.futureDate(future)).to.be.true;
     });
 });

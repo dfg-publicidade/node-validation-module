@@ -88,5 +88,11 @@ class Validation {
         }
         return validator_1.default.isCreditCard(creditCard);
     }
+    static futureDate(date) {
+        if (!date) {
+            return true;
+        }
+        return date.getTime() > new Date().getTime();
+    }
 }
 exports.default = Validation;

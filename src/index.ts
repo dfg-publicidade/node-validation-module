@@ -110,6 +110,14 @@ class Validation {
 
         return validator.isCreditCard(creditCard);
     }
+
+    public static futureDate(date: Date): boolean {
+        if (!date) {
+            return true;
+        }
+
+        return date.getTime() > new Date().getTime();
+    }
 }
 
 export default Validation;

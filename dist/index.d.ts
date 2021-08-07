@@ -12,5 +12,6 @@ declare class Validation {
     static cep(cep: string): boolean;
     static fullName(nome: string): boolean;
     static creditCard(creditCard: string): boolean;
+    static futureDate(date: Date): boolean;
 }
 export default Validation;
